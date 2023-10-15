@@ -101,7 +101,7 @@ meter {
   display: flex;
   padding: 20px 48px;
   justify-content: center;
-  max-width: calc(100% - 240px);
+  max-width: calc(100% - 280px);
   align-items: center;
   position: relative;
   border-radius: 64px;
@@ -320,13 +320,13 @@ meter {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 36px 140px 24px 140px;
+  padding: 36px 136px 24px 136px;
   align-items: flex-end;
 }
 
 .footer .nav-menu {
   display: flex;
-  gap: 32px;
+  gap: 40px;
 }
 
 .footer .nav-item {
@@ -352,9 +352,13 @@ meter {
   color: var(--main-clean-white-ffffff, #FFF);
   display: flex;
   justify-content: space-between;
-  max-width: calc(100% - 240px);
-  margin: 140px auto 200px;
+  max-width: calc(100% - 280px);
+  margin: 140px auto 218px;
   align-items: center;
+}
+
+.text-wrapper {
+  padding-top: 20px;
 }
 
 .content .subtitle {
@@ -480,11 +484,19 @@ meter {
     display: none;
   }
 
+  .authentication {
+    gap: 10px;
+  }
+
+  .home-page {
+    padding-top: 10px;
+  }
+
   .mobile-header {
     display: flex;
     max-width: unset;
     margin: 0 10px;
-    padding: 10px 14px;
+    padding: 8px 15px;
     justify-content: flex-end;
     border: 2px solid var(--main-blue-478-bf-9, #478BF9);
   }
@@ -496,7 +508,7 @@ meter {
   }
 
   .mobile-header .language-selector {
-    padding: 8px;
+    padding: 6px;
   }
 
   .mobile-header .language-icon {
@@ -510,6 +522,10 @@ meter {
     max-width: unset;
     margin: 70px 10px 120px;
     gap: 230px;
+  }
+
+  .text-wrapper {
+    padding-top: 0;
   }
 
   .content .title {
@@ -559,12 +575,13 @@ meter {
 
   .chat-section .chat .message {
     border-radius: 40px;
-    padding: 15px 35px;
-    gap: 6px;
+    padding: 15px 34px;
   }
 
   .chat-section .chat {
+    height: 421px;
     padding: 10px 6px 10px 10px;
+    gap: 10px;
   }
 
   .chat-section .chat-wrapper {
@@ -596,7 +613,15 @@ meter {
     width: 4px;
   }
 
+  .chat-section .chat .message .message-text {
+    margin-bottom: 6px;
+  }
+
   .footer {
+    border-top: 2px solid var(--main-blue-478-bf-9, #478BF9);
+    border-right: 2px solid var(--main-blue-478-bf-9, #478BF9);
+    border-left: 2px solid var(--main-blue-478-bf-9, #478BF9);
+    border-radius: 50px 50px 0px 0px;
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -611,6 +636,12 @@ meter {
   .footer .links {
     align-items: flex-start;
     gap: 8px;
+    font-size: 14px;
+  }
+
+  .footer .link {
+    text-decoration: none;
+    color: var(--main-clean-white-ffffff, #FFF);
   }
 
   .footer .nav-item {
@@ -680,7 +711,7 @@ meter {
   .mobile-menu .nav-menu .nav-item {
     border-radius: 28px;
     border: 2px solid var(--main-blue-478-bf-9, #478BF9);
-    padding: 13px 20px;
+    padding: 11px 20px;
     text-align: left;
     font-size: 18px;
     font-style: normal;
